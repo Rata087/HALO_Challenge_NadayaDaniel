@@ -42,11 +42,15 @@ You can use any IDE you want, such us IntelliJ IDEA, VSCode, etc...
 
 To run this Test Automation project, you can either just run the TestRunner class (using this method the report will NOT be created), or run either mvn clean verify from the command line.
 
-The test results will be recorded in the _target/site/serenity/index.html_ directory (The full path will be indicated at the end of the run in the SERENITY REPORTS section).
-
 By default, the test will run using Chrome browser.
 
-### Commands to run the tests through the console:
+### Test Results
+
+The test results will be recorded in the `target/site/serenity/index.html` directory. You can access the report after running the tests through the maven command by clicking the link below:
+
+[Serenity Test Report](./target/site/serenity/index.html) ---> Right click on the file or tab and open it in Google Chrome or any browser where you want to view the report.
+
+### Commands to run the tests through the console/terminal to create the Serenity Test Report:
 - To run the complete suite:
     -     mvn clean verify -Dcucumber.filter.tags="@HaloChallenge"
 
